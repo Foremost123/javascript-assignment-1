@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 1</title>
+</head>
+<body>
+    <script>
+        var arr1=["rgb(0,0,0)","rgb(255,255,255)","rgb(150,150,150)"];
+        var i=0;
+    window.setInterval(function(){
+        document.body.style.backgroundColor=arr1[i];
+        console.log("color is",arr1[i]);
+        document.body.innerHTML=arr1[i];
+        /*document.write(arr1[i])*/
+        i=(i+1)% arr1.length;
+    },2000);
+    </script>
+</body>
+</html>
